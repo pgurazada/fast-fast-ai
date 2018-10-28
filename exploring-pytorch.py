@@ -12,16 +12,19 @@ Autograd with torch
 x = torch.ones(2, 2, requires_grad=True)
 
 y = x + 2
+y.requires_grad_(True)
 
 z = y * y * 3
+z.requires_grad_(True)
 
 out = z.mean()
 
 #print(z, out)
 
-out.backward()
-print(x.grad)
-
+out.backward() # run the backprop and compute all intermediate gradients
+#print(x.grad) # note that this gives the gradients d(out)/dx
+#print(y.grad) # Why are these not computing the intermediate gradients?
+#print(z.grad)
 
 # Example 2:
 a = torch.randn(2, 2) # default value of requires_grad is False
@@ -40,8 +43,28 @@ b = (a * a).sum()
 
 #print(b.grad_fn)
 
+# Example 3
 
+x = torch.randn(3, requires_grad=True)
 
+print(x)
+
+y = x * 2
+
+while y.data.norm() < 1000:
+    y = y * 2
+
+print(y.grad)
+
+out = y.sum()
+
+print(x.grad) # Where are the gradients?
+
+gradients = torch.tensor([0.1, 1.0, 0.0001], dtype=torch.float)
+
+y.backward(gradients)
+
+print(x.grad)
 
 
 
