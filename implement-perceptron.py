@@ -26,7 +26,7 @@ class Perceptron:
 
             print('Number of misclassifications at epoch: ', epoch, ' = ', errors)            
 
-        return 
+        return self
 
     def net_input(self, X):
         return np.dot(X, self.w_[1:]) + self.w_[0]

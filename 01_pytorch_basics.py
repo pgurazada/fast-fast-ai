@@ -5,14 +5,10 @@
 
 # ## Init, helpers, utils, ...
 
-# In[1]:
-
-
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
 import torchvision
-
 
 # In[2]:
 
