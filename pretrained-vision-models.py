@@ -55,8 +55,8 @@ def predict_classes(model_obj=ResNet50(weights='imagenet'),
 
     preds = model.predict(x)
 
-    for class_id, class_name, confidence in decode_predictions(preds, top=5)[0]:
-        print('  {} (synset: {}): {:0.3f}'.format(class_name, class_id, confidence))
+    for _, class_name, confidence in decode_predictions(preds, top=5)[0]:
+        print('  {} : {:0.3f}'.format(class_name, confidence))
 
 
 if __name__ == '__main__':
@@ -75,7 +75,7 @@ if __name__ == '__main__':
                     image=img,
                     input_shape=(224, 224))
 
-    predict_classes(model_obj=InceptionResNetV2(weights='imagenet', 
+    predict_classes(model_obj=InceptionResNetV2(weights='imagenet',
                                                 input_shape=(299, 299, 3)),
                     image=img,
                     input_shape=(299, 299))
