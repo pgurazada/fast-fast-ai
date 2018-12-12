@@ -58,6 +58,3 @@ if __name__ == '__main__':
 
         for i in range(len(weights)):
             weights[i] += alpha * weight_deltas[i]
- 
-
-

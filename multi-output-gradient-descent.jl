@@ -9,3 +9,4 @@ function ele_mul(scalar, vector)
     return out
     
 end
+
