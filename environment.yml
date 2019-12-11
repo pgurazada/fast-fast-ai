@@ -5,3 +5,7 @@ dependencies:
   - scikit-learn
   - jupyter
   - pandas
+  - torch
+  - fastai
+  - tensorflow
+  - keras

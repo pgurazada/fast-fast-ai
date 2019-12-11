@@ -1,0 +1,16 @@
+INFO:root:<keras.optimizers.SGD object at 0x1a29c80d30>learning rate: 0.100, test accuracy: 0.986
+INFO:root:<keras.optimizers.Adam object at 0x1a29c80b70>learning rate: 0.100, test accuracy: 0.878
+INFO:root:<keras.optimizers.Adadelta object at 0x1a29e1bf98>learning rate: 0.100, test accuracy: 0.931
+INFO:root:<keras.optimizers.RMSprop object at 0x1a29ef5240>learning rate: 0.100, test accuracy: 0.375
+INFO:root:<keras.optimizers.SGD object at 0x1a29ef5358>learning rate: 0.010, test accuracy: 0.939
+INFO:root:<keras.optimizers.Adam object at 0x1a2d934fd0>learning rate: 0.010, test accuracy: 0.981
+INFO:root:<keras.optimizers.Adadelta object at 0x1a2d934e80>learning rate: 0.010, test accuracy: 0.256
+INFO:root:<keras.optimizers.RMSprop object at 0x1a2d934eb8>learning rate: 0.010, test accuracy: 0.975
+INFO:root:<keras.optimizers.SGD object at 0x1a2d934dd8>learning rate: 0.001, test accuracy: 0.617
+INFO:root:<keras.optimizers.Adam object at 0x1a2de99e10>learning rate: 0.001, test accuracy: 0.981
+INFO:root:<keras.optimizers.Adadelta object at 0x1a2de99fd0>learning rate: 0.001, test accuracy: 0.136
+INFO:root:<keras.optimizers.RMSprop object at 0x1a2deaaef0>learning rate: 0.001, test accuracy: 0.986
+INFO:root:<keras.optimizers.SGD object at 0x1a2deaaf28>learning rate: 0.000, test accuracy: 0.097
+INFO:root:<keras.optimizers.Adam object at 0x1a2d934dd8>learning rate: 0.000, test accuracy: 0.906
+INFO:root:<keras.optimizers.Adadelta object at 0x1a2e797668>learning rate: 0.000, test accuracy: 0.172
+INFO:root:<keras.optimizers.RMSprop object at 0x1a2de99e10>learning rate: 0.000, test accuracy: 0.917
